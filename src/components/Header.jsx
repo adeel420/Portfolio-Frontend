@@ -12,7 +12,7 @@ import { FaUser } from "react-icons/fa";
 import { MdLogout } from "react-icons/md";
 import { handleError, handleSuccess } from "../utils/Utils";
 import axios from "axios";
-import Model from "./model";
+import Model from "./Model";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
