@@ -28,10 +28,8 @@ const First_Section = () => {
         </h1>
 
         <p className="text-[#959595] text-sm md:text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa et ab
-          nisi vitae fugit! Quisquam, numquam adipisci. Temporibus, possimus?
-          Beatae sunt libero assumenda quibusdam cupiditate animi, laboriosam,
-          repellendus atque corrupti explicabo tempora.
+          Passionate about turning ideas into real-world digital solutions using
+          MongoDB, Express.js, React.js, and Node.js.
         </p>
 
         <Link

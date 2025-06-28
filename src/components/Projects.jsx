@@ -12,13 +12,8 @@ const Projects = () => {
         className="text-center text-[gray] mt-4 w-[80%] relative left-[50%]"
         style={{ transform: "translateX(-50%)" }}
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sed
-        nisi, repudiandae rem illum quidem sequi corrupti? Pariatur maxime
-        quibusdam nesciunt nostrum eveniet hic eos! Velit asperiores tenetur
-        perferendis maiores! Lorem, ipsum dolor sit amet consectetur adipisicing
-        elit. Ipsum facere dignissimos, odio optio laudantium beatae quasi
-        exercitationem quia animi, eligendi doloremque aliquid, molestiae sint?
-        Cumque molestiae sapiente illo expedita doloremque?
+        A selection of my recent work — built with modern technologies, clean
+        code, and real-world functionality.
       </p>
 
       {/* Tabs */}

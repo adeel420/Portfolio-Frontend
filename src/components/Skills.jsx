@@ -39,10 +39,8 @@ const Skills = () => {
         className="text-center text-[gray] mt-4 w-[80%] relative left-[50%]"
         style={{ transform: "translateX(-50%)" }}
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sed
-        nisi, repudiandae rem illum quidem sequi corrupti? Pariatur maxime
-        quibusdam nesciunt nostrum eveniet hic eos! Velit asperiores tenetur
-        perferendis maiores!
+        Here are the technologies and tools I use to build efficient, scalable,
+        and modern web applications.
       </p>
 
       {/*  Carousel */}
