@@ -113,10 +113,14 @@ export default function Header() {
         <div className="flex lg:hidden">
           <button
             type="button"
-            onClick={() => setMobileMenuOpen(true)}
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
           >
-            <Bars3Icon aria-hidden="true" className="size-6" />
+            {!mobileMenuOpen ? (
+              <Bars3Icon aria-hidden="true" className="size-6" />
+            ) : (
+              <XMarkIcon aria-hidden="true" className="size-6" />
+            )}
           </button>
         </div>
 
@@ -202,7 +206,7 @@ export default function Header() {
               <Popover
                 content={content}
                 trigger="click"
-                className="cursor-pointer text-white text-[22px] bg-[#952e75] border border-white rounded-full p-2 h-[60px] w-[60px] flex items-center justify-center "
+                className="cursor-pointer text-white text-[22px] bg-[#952e75] border border-white rounded-full p-2 h-[50px] w-[50px] flex items-center justify-center "
               >
                 {user?.name?.charAt(0)}
               </Popover>
@@ -222,42 +226,32 @@ export default function Header() {
       <Dialog
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
-        className="lg:hidden"
+        className="lg:hidden "
       >
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-[#141414] text-white px-6 py-6 sm:max-w-sm">
-          <div className="flex items-center justify-between">
-            <button
-              type="button"
-              onClick={() => setMobileMenuOpen(false)}
-              className="-m-2.5 rounded-md p-2.5 text-white"
-            >
-              <XMarkIcon aria-hidden="true" className="size-6" />
-            </button>
-          </div>
-
-          <div className="mt-6 space-y-4">
+          <div className="mt-12 space-y-4">
             <a
               href="/"
-              className="block text-lg font-semibold text-white hover:bg-gray-700 p-2 rounded-lg"
+              className="block text-base font-semibold text-white hover:bg-gray-700 p-2 rounded-lg"
             >
               Home
             </a>
             <a
               href="#about"
-              className="block text-lg font-semibold text-white hover:bg-gray-700 p-2 rounded-lg"
+              className="block text-base font-semibold text-white hover:bg-gray-700 p-2 rounded-lg"
             >
               About Me
             </a>
             <a
               href="#skills"
-              className="block text-lg font-semibold text-white hover:bg-gray-700 p-2 rounded-lg"
+              className="block text-base font-semibold text-white hover:bg-gray-700 p-2 rounded-lg"
             >
               Skills
             </a>
             <a
               href="#projects"
-              className="block text-lg font-semibold text-white hover:bg-gray-700 p-2 rounded-lg"
+              className="block text-base font-semibold text-white hover:bg-gray-700 p-2 rounded-lg"
             >
               Projects
             </a>
@@ -265,13 +259,13 @@ export default function Header() {
               <>
                 <a
                   href="/login"
-                  className="block text-lg font-semibold text-white hover:bg-gray-700 p-2 rounded-lg"
+                  className="block text-base font-semibold text-white hover:bg-gray-700 p-2 rounded-lg"
                 >
                   Login
                 </a>
                 <a
                   href="/signup"
-                  className="block text-lg font-semibold text-white hover:bg-gray-700 p-2 rounded-lg"
+                  className="block text-base font-semibold text-white hover:bg-gray-700 p-2 rounded-lg"
                 >
                   Signup
                 </a>
@@ -280,7 +274,7 @@ export default function Header() {
               <Popover
                 content={content}
                 trigger="click"
-                className="cursor-pointer text-white text-[22px] bg-[#952e75] border border-white rounded-full p-2 h-[60px] w-[60px] flex items-center justify-center "
+                className="cursor-pointer text-white text-[18px] bg-[#952e75] border border-white rounded-full p-2 h-[50px] w-[50px] flex items-center justify-center "
               >
                 {user?.name?.charAt(0)}
               </Popover>

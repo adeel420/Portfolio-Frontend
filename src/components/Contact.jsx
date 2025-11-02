@@ -25,6 +25,11 @@ const Contact = () => {
         { firstName, lastName, email, phone, message },
         { headers: { "Content-Type": "application/json" } }
       );
+      setFirstName("");
+      setLastName("");
+      setEmail("");
+      setPhone("");
+      setMessage("");
       setTimeout(() => {
         handleSuccess("Your message has been sent successfully");
       }, 500);
