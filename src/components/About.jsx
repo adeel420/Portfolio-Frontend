@@ -1,7 +1,9 @@
 import React from "react";
 import { assets5 } from "../assets/assets";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+  const navigate = useNavigate();
   return (
     <div className="p-4 bg-[#141414] text-white">
       <h1 className="text-center text-4xl md:text-5xl font-semibold mt-3">
@@ -37,7 +39,10 @@ const About = () => {
           </p>
 
           {/* Contact Me Button */}
-          <button className="mt-5 text-black bg-white px-4 py-2 text-lg font-bold w-[150px] cursor-pointer transition-all hover:bg-transparent hover:border hover:border-white hover:text-white">
+          <button
+            className="mt-5 text-black bg-white px-4 py-2 text-lg font-bold w-[150px] cursor-pointer transition-all hover:bg-transparent hover:border hover:border-white hover:text-white"
+            onClick={() => navigate("#contact")}
+          >
             Contact Me
           </button>
         </div>

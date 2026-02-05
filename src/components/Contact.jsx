@@ -49,7 +49,10 @@ const Contact = () => {
         </div>
       )}
 
-      <div className="flex flex-wrap justify-around items-center p-8">
+      <div
+        className="flex flex-wrap justify-around items-center p-8"
+        id="contact"
+      >
         <div className="w-full md:w-[50%] flex justify-center">
           <img
             src={assets5.contactImg}
