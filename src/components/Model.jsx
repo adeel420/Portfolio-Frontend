@@ -11,6 +11,7 @@ const Model = () => {
   const token = localStorage.getItem("token");
 
   const handleGet = async () => {
+    if (!token) return;
     try {
       const response = await axios.get(
         `${import.meta.env.VITE_SERVER_API}/user/login-data`,
