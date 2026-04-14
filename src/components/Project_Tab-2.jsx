@@ -1,30 +1,14 @@
-import React, { useEffect, useState } from "react";
-import { projects2 } from "../data/Data";
+import React from "react";
 import { IoMdOpen } from "react-icons/io";
-import axios from "axios";
 
-const Project_Tab2 = () => {
-  const [projects, setProjects] = useState([]);
+const Project_Tab2 = ({ projects = [] }) => {
+  const data = projects.slice(6, 12);
 
-  const handleGet = async () => {
-    try {
-      const response = await axios.get(
-        `${import.meta.env.VITE_SERVER_API}/project/`
-      );
-      setProjects(response.data);
-    } catch (err) {
-      console.log(err);
-    }
-  };
-
-  useEffect(() => {
-    handleGet();
-  }, []);
   return (
     <div className="mt-12">
-      {projects.slice(6, 12).length > 0 ? (
+      {data.length > 0 ? (
         <div className="tab grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.slice(6, 12).map((project) => (
+          {data.map((project) => (
             <div
               className="bg-[#212529] rounded-2xl shadow-lg overflow-hidden w-full max-w-sm sm:max-w-md transition-transform hover:scale-[1.02]"
               key={project._id}

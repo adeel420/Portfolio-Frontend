@@ -25,9 +25,11 @@ import image18 from "./images/image-18.png";
 import contactImg from "./images/contact-img.svg";
 import myPic from "./images/my-pic.png";
 import loginImg from "./images/login-img.png";
+import whatsapp from "./images/whatsapp.png";
 
 export const assets5 = {
   contactImg,
+  whatsapp,
   myPic,
 };
 

@@ -6,6 +6,7 @@ import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import About from "../components/About";
+import Sticky_Logo from "../components/Sticky_Logo";
 
 const Home = () => {
   return (
@@ -59,6 +60,8 @@ const Home = () => {
       >
         <Contact />
       </div>
+
+      <Sticky_Logo />
     </>
   );
 };
